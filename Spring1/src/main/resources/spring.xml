@@ -3,7 +3,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id = "alien" class = "Com.telisko.Alien" scope="prototype">
-
+    <bean id = "alien" class = "Com.telisko.Alien" >
+        <property name="age" value="21"></property>
     </bean>
     </beans>
