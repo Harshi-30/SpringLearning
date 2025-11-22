@@ -4,6 +4,10 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id = "alien" class = "Com.telisko.Alien" >
-        <property name="age" value="21"></property>
+        <constructor-arg value="24"/>
+        <constructor-arg ref="lap1"/>
+<!--        <property name="age" value="21"/>-->
+        <property name="lap" ref="lap1"/>
     </bean>
+    <bean id="lap1" class="Com.telisko.Laptop"/>
     </beans>
